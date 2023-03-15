@@ -1,0 +1,1376 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+/*
+
+fuentes
+
+font-family: 'Aleo', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+
+colores
+
+*/
+
+
+
+/*-----------------INICIO------------------*/
+
+/*mobil*/
+
+header {
+    background: linear-gradient(180deg, rgba(0,0,0), rgba(0,0,0,0));
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    
+}
+
+.navbar {
+    list-style: none;
+    gap: 1rem;
+    display: flex;
+    list-style: none;
+    padding-top: 1rem;
+}
+
+
+.linkNav {
+    text-decoration: none;
+    color: rgb(228, 227, 227);
+    font-size: 1rem;
+    font-family:'Barlow Condensed', sans-serif;
+}
+
+.linkNav:hover {
+    text-shadow: 0.4rem 0.4rem 0.2rem black;
+}
+
+.logoBN img{
+    height: 3rem;
+    width: 3rem;
+}
+
+
+.banner1 {
+    background-image: url(../assets/persona-paisaje1.jpg);
+    width: 100%;
+    height: 30rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.banner1 h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif ;
+    padding-top: 0;
+    letter-spacing: 0.5rem;
+    line-height: 6rem;
+    color: rgba(0, 0, 0, 0.812);
+}
+
+.banner2 {
+    background-image: url(../assets/gente-fuego.jpg);
+    width: 100%;
+    height: 20rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.banner2 p {
+    font-family: 'Aleo', serif;
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(148, 147, 147);
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+    padding-top: 3rem;
+    
+}
+
+aside {
+    background-color: black;
+}
+
+.socialMedia {
+display: flex;
+justify-content: center;
+gap: 2rem;
+padding: 2rem 0 2rem 0;
+}
+
+.socialMedia img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 6.5rem;
+    padding-top: 1rem;
+    position: absolute;
+}
+
+.footerLogo img {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    margin: auto;
+}
+
+footer p {
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+    text-align: center;
+    color: rgb(70, 70, 70);
+}
+
+.footerLinks ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 0.1rem;
+    gap:0.5rem;
+}
+
+.linkFooter {
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(93, 93, 93);
+}
+
+.linkFooter:hover {
+    color: white;
+}
+
+footer p::after{  /* lineas del logo, seguro hay una mejor manera de hacerlo*/
+    content: '';
+    position: absolute;
+    right: 80px;
+    top: 15px;
+    width: 50px;
+    height: 1px;
+    background-color: rgb(93, 93, 93);
+}
+
+footer p::before {
+    content: '';
+    position: absolute;
+    left: 80px;
+    top: 15px;
+    width: 50px;
+    height: 1px;
+    background-color:  rgb(93, 93, 93);
+}
+
+/*tablet*/
+
+@media (min-width:768px) {
+
+    header {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .linkNav {
+        font-size: 2rem;
+    }
+
+    .logoBN img{
+        height: 5rem;
+        width: 5rem;
+    }
+    
+    .banner1 {
+        height: 60rem;
+    }
+
+    .banner1 h1 {
+        font-size: 6rem;
+        padding-top: 5rem;
+        letter-spacing: 2.5rem;
+        line-height: 10rem;
+    }
+
+    .banner2 {
+        height: 40rem;
+    }
+
+    .banner2 p {
+        font-size: 3rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.4rem;
+        padding-top: 6rem;
+    }
+
+    aside {
+        position:relative;
+    }
+    
+    .socialMedia {
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        right: 0px;
+        top: -80rem;
+        background-color: rgba(122, 119, 119, 0.5);
+        border-radius: 10px 0px 0px 10px ;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+    
+    .socialMedia img {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    
+    footer {
+        height: 13rem;
+    }
+
+    .footerLogo img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    footer p {
+        font-size: 1.6rem;
+        padding-top: 0.5rem;
+    }
+    
+    .footerLinks ul {
+        padding-top: 1rem;
+        gap:0.5rem;
+    }
+    
+    .linkFooter {
+        font-size: 2rem;
+    }
+
+    footer p::after{ 
+        right: 22rem;
+        top: 3rem;
+        width: 10rem;
+        height: 0.2rem;
+    }
+    
+    footer p::before {
+        left: 22rem;
+        top: 3rem;
+        width: 10rem;
+        height: 0.2rem;
+}
+
+}
+
+/*desktop*/
+@media (min-width: 1440px) {
+    
+    header {
+        padding: 3rem 0 3rem 0;
+    }
+
+    .navbar {
+        gap: 4rem;
+        padding-top: 3.5rem;
+    }
+
+    .linkNav {
+        font-size: 3.5rem;
+    }
+
+    .logoBN img{
+        height: 12rem;
+        width: 12rem;
+    }
+    
+    .banner1 {
+        height: 100rem;
+    }
+
+    .banner1 h1 {
+        font-size: 10rem;
+        padding-top: 5rem;
+        letter-spacing: 4rem;
+        line-height: 20rem;
+    }
+
+    .banner2 {
+        height: 80rem;
+    }
+
+    .banner2 p {
+        font-size: 6rem;
+        line-height: 4rem;
+        letter-spacing: 0.6rem;
+        padding-top: 12rem;
+    }
+
+    aside {
+        position:relative;
+    }
+    
+    .socialMedia {
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        right: 0px;
+        top: -140rem;
+        background-color: rgba(122, 119, 119, 0.5);
+        border-radius: 1.5rem 0rem 0rem 1.5rem ;
+        padding: 2.5rem 1rem 2.5rem 1rem;
+        gap: 3.5rem;
+    }
+    
+    .socialMedia img {
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+    
+    footer {
+        height: 22rem;
+    }
+
+    .footerLogo img {
+        height: 10rem;
+        width: 10rem;
+    }
+    
+    footer p {
+        font-size: 2.5rem;
+        padding-top: 1rem;
+    }
+    
+    .footerLinks ul {
+        padding-top: 2rem;
+        gap:0.5rem;
+    }
+    
+    .linkFooter {
+        font-size: 2.5rem;
+    }
+
+    footer p::after{ 
+        right: 40rem;
+        top: 5rem;
+        width: 20rem;
+        height: 0.2rem;
+    }
+    
+    footer p::before {
+        left: 40rem;
+        top: 5rem;
+        width: 20rem;
+        height: 0.2rem;
+}
+
+}
+
+
+/* -------------------TESTIMONIOS------------- */
+
+/*mobil*/
+
+.backgroundTestimonios {
+    background-image: url(../assets/persona-paisaje3.jpg);
+    width: 100%;
+    height: 75rem;
+    background-position:center ;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.testimoniosh2 {
+    font-family:'Aleo', serif ;
+    font-size: 1.5rem;
+    margin: 3rem 0 0 2rem;
+    color:black;
+}
+
+.testimonios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15rem 15rem 15rem 15rem;
+    grid-template-areas: 
+    "testimonio1"
+    "testimonio2"
+    "testimonio3"
+    "testimonio4";
+    margin: 2rem;
+    margin-top: 2.5rem;
+}
+
+.testimonios p {
+    font-family:'Aleo', serif;
+    background-color: rgba(166, 166, 166, 0.384);
+    font-size: 0.6rem;
+    width: 100%;
+    height: 10rem;
+    margin-left: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.testimonios img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 1rem;
+}
+
+.testimonio1{
+    display: flex;
+    padding-bottom: 5rem;
+}
+
+.testimonio2{
+    display: flex;
+    padding-bottom: 5rem;
+}
+
+.testimonio3{
+    display: flex;
+    padding-bottom: 5rem;
+}
+
+.testimonio4{
+    display: flex;
+    padding-bottom: 5rem;
+}
+
+/*tablet*/
+
+@media (min-width:768px) {
+
+    header {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .linkNav {
+        font-size: 2rem;
+    }
+
+    .logoBN img{
+        height: 5rem;
+        width: 5rem;
+    }
+    
+    .backgroundTestimonios {
+        height: 130rem;
+    }
+    
+    .testimoniosh2 {
+        font-size: 3rem;
+        margin: 4rem 0 0 5rem;
+    }
+    
+    .testimonios {
+        grid-template-rows: 25rem 25rem 25rem 25rem;
+        margin: 5rem;
+        margin-top: 6rem;
+    }
+    
+    .testimonios p {
+        font-size: 1.5rem;
+        width: 95%;
+        height: 20rem;
+        margin-left: 3rem;
+        margin-right: 2rem;
+        padding: 2rem 3rem 1rem 1rem;
+        border-radius: 2rem;
+    }
+    
+    .testimonios img {
+        height: 20rem;
+        width: 20rem;
+        border-radius: 2rem;
+    }
+    
+    .testimonio1{
+        padding-bottom: 5rem;
+    }
+    
+    .testimonio2{
+        padding-bottom: 5rem;
+    }
+    
+    .testimonio3{
+        padding-bottom: 5rem;
+    }
+    
+    .testimonio4{
+        padding-bottom: 5rem;
+    }
+
+    
+    footer {
+        height: 13rem;
+    }
+
+    .footerLogo img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    footer p {
+        font-size: 1.6rem;
+        padding-top: 0.5rem;
+    }
+    
+    .footerLinks ul {
+        padding-top: 1rem;
+        gap:0.5rem;
+    }
+    
+    .linkFooter {
+        font-size: 2rem;
+    }
+
+    footer p::after{ 
+        right: 22rem;
+        top: 3rem;
+        width: 10rem;
+        height: 0.2rem;
+    }
+    
+    footer p::before {
+        left: 22rem;
+        top: 3rem;
+        width: 10rem;
+        height: 0.2rem;
+}
+
+}
+
+
+/*desktop*/
+@media (min-width: 1440px) {
+    
+    header {
+        padding: 3rem 0 3rem 0;
+    }
+
+    .navbar {
+        gap: 4rem;
+        padding-top: 3.5rem;
+    }
+
+    .linkNav {
+        font-size: 3.5rem;
+    }
+
+    .logoBN img{
+        height: 12rem;
+        width: 12rem;
+    }
+    
+
+    .backgroundTestimonios {
+        height: 250rem;
+    }
+    
+    .testimoniosh2 {
+        font-size: 4rem;
+        margin: 8rem 0 0 12rem;
+    }
+    
+    .testimonios {
+        grid-template-rows: 45rem 45rem 45rem 45rem;
+        margin: 12rem;
+        margin-top: 10rem;
+    }
+    
+    .testimonios p {
+        font-size: 2.5rem;
+        width: 95%;
+        height: 35rem;
+        margin-left: 5rem;
+        margin-right: 3rem;
+        padding: 5rem 5rem 2rem 2rem;
+        border-radius: 3rem;
+    }
+    
+    .testimonios img {
+        height: 35rem;
+        width: 35rem;
+        border-radius: 3rem;
+    }
+    
+    .testimonio1{
+        padding-bottom: 5rem;
+    }
+    
+    .testimonio2{
+        padding-bottom: 5rem;
+    }
+    
+    .testimonio3{
+        padding-bottom: 5rem;
+    }
+    
+    .testimonio4{
+        padding-bottom: 5rem;
+    }
+
+    footer {
+        height: 22rem;
+    }
+
+    .footerLogo img {
+        height: 10rem;
+        width: 10rem;
+    }
+    
+    footer p {
+        font-size: 2.5rem;
+        padding-top: 1rem;
+    }
+    
+    .footerLinks ul {
+        padding-top: 2rem;
+        gap:0.5rem;
+    }
+    
+    .linkFooter {
+        font-size: 2.5rem;
+    }
+
+    footer p::after{ 
+        right: 40rem;
+        top: 5rem;
+        width: 20rem;
+        height: 0.2rem;
+    }
+    
+    footer p::before {
+        left: 40rem;
+        top: 5rem;
+        width: 20rem;
+        height: 0.2rem;
+}
+
+}
+
+
+
+/* ----------------SOBRE NOSOTROS------------- */
+
+.backgroundSobreNosotros {
+    background-image: url(../assets/sobre-nosotros1.jpg);
+    width: 100%;
+    height: 50rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.backgroundSobreNosotros .linkNav:hover {
+    text-shadow: 0.4rem 0.4rem 0.2rem rgb(215, 215, 215);
+}
+
+.firstSectionText{
+    font-family: 'Aleo', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(148, 147, 147);
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    margin: auto;
+    width: 25rem;
+    background-color: rgba(255, 255, 255, 0.063);
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+.backgroundSobreNosotros2 {
+    background-image: url(../assets/sobre-nosotros2.jpg);
+    width: 100%;
+    height: 90rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.secondSection {
+    display:flex;
+    position: relative;
+}
+
+
+.secondSection img {
+    height: 20rem;
+    width: 12rem;
+    border-radius: 0.4rem;
+    position:absolute;
+    bottom: 12rem;
+    left: 2rem;
+}
+
+.secondSection p {
+    font-family: 'Aleo', serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: rgb(148, 147, 147);
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+    margin:3rem 3rem 3rem 50% ;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.063);
+    border-radius: 1rem;
+    
+}
+
+.staffTitulo h2 { 
+    font-family:'Montserrat', sans-serif ;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color: rgb(161, 161, 161);
+}
+
+
+.staff {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 12rem 12rem 12rem 12rem;
+    grid-template-areas: 
+    "staff1"
+    "staff2"
+    "staff3"
+    "staff4";
+    margin: 4rem;
+    gap: 2rem;
+}
+
+.staff1, .staff2, .staff3, .staff4 {
+    display: flex;
+    gap: 3rem;
+}
+
+.staff-info {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 2rem;
+}
+
+
+.staff h3 {
+        text-align: center;
+        font-family: 'Aleo', serif;
+        font-size: 1.5rem;
+        color: rgb(161, 161, 161);
+}
+
+.staff a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Aleo', serif;
+    font-size: 1.2rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: rgba(255, 255, 255, 0.432);
+    border-radius: 2rem;
+
+}
+
+.staff img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.staff-p {
+    display: none;
+}
+.staff-p2 {
+    display: none;
+}
+
+/*tablet*/
+
+@media (min-width:768px) {
+
+    .backgroundSobreNosotros {
+        height: 70rem;
+    }
+    
+    .firstSectionText{
+        font-size: 2rem;
+        line-height: 2rem;
+        letter-spacing: 0.2rem;
+        padding: 1rem;
+        width: 55rem;
+        margin:auto;
+        margin-top: 4rem;
+        border-radius: 2rem;
+    }
+    
+    .backgroundSobreNosotros2 {
+        width: 100%;
+        height: 150rem;
+        background-position: center;
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+    
+    .secondSection {
+        display:flex;
+        position: relative;
+    }
+    
+    .secondSection img {
+        height: 35rem;
+        width: 20rem;
+        border-radius: 0.3rem;
+        position:absolute;
+        bottom: 17rem;
+        left: 5rem;
+    }
+    
+    
+    .secondSection p {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.2rem;
+        border-radius: 2rem;
+        margin: 8rem 4rem 10rem 40%;
+    }
+    
+    .staffTitulo h2 { 
+        font-size: 4rem;
+        letter-spacing: 1.5rem;
+    }
+    
+
+    .staff {
+        grid-template-rows: 20rem 20rem 20rem 20rem;
+        margin: 4rem;
+        gap: 4rem;
+    }
+    
+    
+    .staff-info {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 2rem;
+    }
+    
+    .staff-p {
+        display: block;
+    }
+
+    .staff h3 {
+        font-size: 2rem;
+}
+
+    .staff p {
+            text-align: center;
+            font-family: 'Aleo', serif;
+            font-size: 1.5rem;
+            color: rgb(161, 161, 161);
+            padding: 0 3rem 0 3rem;
+    }
+    
+
+    .staff a {
+        font-size: 1.5rem;
+        margin-left: 40%;
+        margin-right: 40%;
+        border-radius: 2rem;
+    
+    }
+    
+    .staff img {
+        height: 15rem;
+        width: 15rem;
+        margin: 2rem 0 0 2rem;
+        border-radius: 50%;
+    }
+}
+
+    .staff-p2 {
+        display: none;
+    }
+
+/*desktop*/
+@media (min-width: 1440px) {
+
+    .backgroundSobreNosotros {
+        height: 100rem;
+    }
+    
+
+    .firstSectionText{
+        font-size: 3rem;
+        line-height: 3rem;
+        letter-spacing: 0.3rem;
+        padding: 1.5rem;
+        width: 80rem;
+        margin:auto;
+        margin-top: 4rem;
+        border-radius: 2rem;
+    }
+    
+    .backgroundSobreNosotros2 {
+        width: 100%;
+        height: 230rem;
+        background-position: center;
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+    
+    .secondSection {
+        display:flex;
+        position: relative;
+    }
+    
+    .secondSection img {
+        height: 50rem;
+        width: 30rem;
+        border-radius: 0.3rem;
+        position:absolute;
+        bottom: 17rem;
+        left: 12rem;
+    }
+    
+    
+    .secondSection p {
+        font-size: 2.3rem;
+        line-height: 3rem;
+        letter-spacing: 0.3rem;
+        border-radius: 2rem;
+        margin: 12rem 12rem 10rem 35%;
+        color: rgb(103, 103, 103);
+        
+    }
+    
+    .staffTitulo h2 { 
+        font-size: 7rem;
+        letter-spacing: 4rem;
+    }
+    
+    .staff {
+        grid-template-rows: 30rem 30rem 30rem 30rem;
+        margin: 10rem 12rem 8rem 12rem;
+        gap: 12rem;
+    }
+
+    
+    .staff-info {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 2rem;
+    }
+    
+    .staff-p {
+        display: block;
+    }
+    
+    .staff-p2 {
+        display: block;
+    }
+
+    .staff h3 {
+        margin: 0 20rem 0 20rem;
+        font-size: 4rem;
+        border-bottom:  2px solid black;
+    }
+
+    .staff p {
+            text-align: center;
+            font-family: 'Aleo', serif;
+            font-size: 2rem;
+            color: rgb(161, 161, 161);
+            padding: 0rem 3rem 0 3rem;
+    }
+    
+
+    .staff a {
+        display: none;
+    
+    }
+    
+    .staff img {
+        height: 25rem;
+        width: 25rem;
+        margin: 5rem 0 0 2rem;
+        border-radius: 50%;
+    }
+}
+
+/* ----------------EXPERIENCIAS------------- */
+
+
+/*mobil*/
+
+.backgroundExperiencias {
+    background-image: url(../assets/persona-paisaje2.jpg);
+    width: 100%;
+    height: 90rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.travesiash2 {
+    text-align: center;
+    font-family:'Aleo', 'serif ';
+    font-size: 1.5rem;
+    margin: 2rem 0rem 3rem 0rem;
+    color: rgb(161, 161, 161);
+}
+
+.travesias {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 12rem 12rem 12rem;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.travesiasContent {
+    display: flex;
+    gap: 1rem;
+}
+
+.travesiasContent img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+}
+
+.travesiasInfo { 
+    background-color: rgba(255, 255, 255, 0.399);
+    border-radius: 1rem;
+    
+}
+
+.travesias h3, .descanzos h3{
+    font-family: 'Aleo';
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.travesiasP{
+    text-align: center;
+    font-family: 'aleo';
+    font-size: 0.8rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.travesiasInfo a, .descanzos a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Aleo';
+    font-size: 0.8rem;
+    border-top: 1px solid black;
+    padding-top: 0.5rem;
+    margin: 0 15% 0 15%;
+    width: 70%;
+    color: black;
+}
+
+.descanzosh2 {
+    text-align: center;
+    font-family:'Aleo', serif ;
+    font-size: 1.5rem;
+    margin: 2rem 0rem 3rem 0rem;
+    color: rgb(161, 161, 161);
+}
+
+.descanzos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    margin: 2rem ;
+    
+}
+
+.descanzosImg1 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.descanzosInfo1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: rgba(255, 255, 255, 0.362);
+}
+
+.descanzosInfo2 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: rgba(255, 255, 255, 0.362);
+}
+
+.descanzosImg2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.descanzosInfo1, .descanzosInfo2 {
+    background-color: rgba(255, 255, 255, 0.399);   
+    border-radius: 1rem;
+    
+}
+
+.descanzosP {
+    text-align: center;
+    font-family: 'aleo';
+    font-size: 0.8rem;
+    padding: 1rem 1rem 0 1rem
+}
+
+.descanzos img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 0.5rem;
+}
+.descanzosImg2 img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 0.5rem;
+}
+
+.travesiasDesktopP {
+    display: none;
+}
+
+.moreInfo {
+    display:none;
+}
+
+
+/*tablet*/
+
+@media (min-width:768px) {
+
+
+.backgroundExperiencias {
+    height: 160rem;
+}
+
+.travesiash2 {
+    font-size: 3rem;
+    margin: 4rem 0rem 0rem 0rem;
+    letter-spacing: 0.8rem;
+}
+
+.travesias {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20rem 20rem 20rem;
+    margin: 4rem 8rem 8rem 8rem;
+    gap: 6rem;
+    
+}
+
+.travesiasContent {
+    display: flex;
+    gap: 4rem;
+}
+
+.travesiasContent img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.travesiasInfo { 
+    background-color: rgba(255, 255, 255, 0.399);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.travesias h3, .descanzos h3{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.travesiasP{
+    font-size: 1.5rem;
+}
+
+.travesias a{
+    display: none;
+}
+
+.moreInfo {
+    display: block ;
+    text-align: center;
+    font-family: 'Monserrat';
+    font-size: 1.2rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    border-top: 1px solid rgb(3, 94, 3);
+    width: 90%;
+    margin: auto;
+    color: rgb(3, 94, 3);
+}
+
+.descanzosh2 {
+    font-size: 3rem;
+    letter-spacing: 0.8rem;
+    margin: 2rem 0rem 3rem 0rem;
+}
+
+.descanzos {
+    display: grid;
+    grid-template-rows: 20rem 20rem ;
+    margin: 4rem 8rem 8rem 8rem;
+    gap: 6rem;
+}
+
+.descanzosContent {
+    display: flex;
+    gap: 4rem;
+}
+
+.descanzosInfo {
+    background-color: rgba(255, 255, 255, 0.399);   
+    border-radius: 1rem;
+}
+
+.descanzosP {
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.descanzos img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+.travesiasDesktopP {
+    display: none;
+}
+
+.descanzos a {
+    display: none;
+}
+
+}
+
+
+/*desktop*/
+@media (min-width: 1440px) {
+
+.backgroundExperiencias {
+    height: 225rem;
+}
+
+.travesiash2 {
+    font-size: 5rem;
+    margin: 4rem 0rem 0rem 0rem;
+    letter-spacing: 1rem;
+}
+
+.travesias {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25rem 25rem 25rem;
+    margin: 8rem 15rem 15rem 15rem;
+    gap: 8rem;
+}
+
+.travesiasContent {
+    display: flex;
+    gap: 8rem;
+}
+
+.travesiasContent img {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+}
+
+.travesiasInfo { 
+    background-color: rgba(255, 255, 255, 0.399);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.travesias h3, .descanzos h3{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.travesiasDesktopP {
+    display: block;
+    text-align: center;
+    font-family: 'aleo';
+    font-size: 3rem;
+    padding: 2rem 0rem 2rem 0rem;
+    width: 80%;
+    margin: auto;
+    }
+
+.travesiasInfo a, .descanzosInfo a{
+    display: none
+}
+
+.descanzosh2 {
+    font-size: 5rem;
+    margin: 4rem 0rem 0rem 0rem;
+    letter-spacing: 1rem;
+}
+
+.descanzos {
+    display: grid;
+    grid-template-rows: 25rem 25rem;
+    margin: 8rem 15rem 15rem 15rem;
+    gap: 8rem;
+}
+
+.descanzosContent {
+    display: flex;
+    gap: 8rem;
+}
+
+.descanzosInfo {   
+    border-radius: 1rem;
+}
+
+.descanzosP{
+    font-size: 2rem;
+    padding: 4rem 0rem 4rem 0rem;
+    width: 80%;
+    margin: auto;
+}
+
+.descanzos img {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 2rem;
+}
+.travesiasP {
+    display: none;
+}
+.moreInfo {
+    font-size: 2rem;
+    padding: 1rem 0rem 0.5rem 0rem;
+}
+}
