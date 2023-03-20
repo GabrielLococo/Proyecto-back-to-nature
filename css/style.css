@@ -176,6 +176,23 @@ footer p::before {
     background-color:  rgb(93, 93, 93);
 }
 
+
+/*Mobile L*/
+@media (min-width:425px) {
+
+    .banner2 {
+        height: 30rem;
+    }
+
+    .banner2 p {
+        font-size: 1.7rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.2rem;
+        padding-top: 5rem;
+    }
+}
+
+
 /*tablet*/
 
 @media (min-width:768px) {
@@ -273,6 +290,38 @@ footer p::before {
 }
 
 }
+
+/*Laptop*/
+@media (min-width:1024px) {
+
+    .banner2 {
+        height: 60rem;
+    }
+
+    .banner2 p {
+        font-size: 3.5rem;
+        line-height: 3rem;
+        letter-spacing: 0.4rem;
+        padding-top: 10rem;
+    }
+
+    .banner1 {
+        height: 70rem;
+    }
+
+    .banner1 h1 {
+        font-size: 6rem;
+        padding-top: 5rem;
+        letter-spacing: 2.5rem;
+        line-height: 10rem;
+    }
+
+    .socialMedia {
+        top: -100rem;
+    }
+
+}
+
 
 /*desktop*/
 @media (min-width: 1440px) {
@@ -449,106 +498,111 @@ footer p::before {
     padding-bottom: 5rem;
 }
 
+
+/*Mobile L*/
+@media (min-width:425px) {
+
+.testimonios p {
+    font-size: 0.8rem;
+}
+}
+
+
 /*tablet*/
 
 @media (min-width:768px) {
 
-    header {
-        padding: 2rem 0 2rem 0;
-    }
+header {
+    padding: 2rem 0 2rem 0;
+}
+.linkNav {
+    font-size: 2rem;
+}
+.logoBN img{
+    height: 5rem;
+    width: 5rem;
+}
 
-    .linkNav {
-        font-size: 2rem;
-    }
+.backgroundTestimonios {
+    height: 130rem;
+}
 
-    .logoBN img{
-        height: 5rem;
-        width: 5rem;
-    }
-    
-    .backgroundTestimonios {
-        height: 130rem;
-    }
-    
-    .testimoniosh2 {
-        font-size: 3rem;
-        margin: 4rem 0 0 5rem;
-    }
-    
-    .testimonios {
-        grid-template-rows: 25rem 25rem 25rem 25rem;
-        margin: 5rem;
-        margin-top: 6rem;
-    }
-    
-    .testimonios p {
-        font-size: 1.5rem;
-        width: 95%;
-        height: 20rem;
-        margin-left: 3rem;
-        margin-right: 2rem;
-        padding: 2rem 3rem 1rem 1rem;
-        border-radius: 2rem;
-    }
-    
-    .testimonios img {
-        height: 20rem;
-        width: 20rem;
-        border-radius: 2rem;
-    }
-    
-    .testimonio1{
-        padding-bottom: 5rem;
-    }
-    
-    .testimonio2{
-        padding-bottom: 5rem;
-    }
-    
-    .testimonio3{
-        padding-bottom: 5rem;
-    }
-    
-    .testimonio4{
-        padding-bottom: 5rem;
-    }
+.testimoniosh2 {
+    font-size: 3rem;
+    margin: 4rem 0 0 5rem;
+}
 
-    
-    footer {
-        height: 13rem;
-    }
+.testimonios {
+    grid-template-rows: 25rem 25rem 25rem 25rem;
+    margin: 5rem;
+    margin-top: 6rem;
+}
 
-    .footerLogo img {
-        height: 50px;
-        width: 50px;
-    }
-    
-    footer p {
-        font-size: 1.6rem;
-        padding-top: 0.5rem;
-    }
-    
-    .footerLinks ul {
-        padding-top: 1rem;
-        gap:0.5rem;
-    }
-    
-    .linkFooter {
-        font-size: 2rem;
-    }
+.testimonios p {
+    font-size: 1.5rem;
+    width: 95%;
+    height: 20rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    padding: 2rem 3rem 1rem 1rem;
+    border-radius: 2rem;
+}
 
-    footer p::after{ 
-        right: 22rem;
-        top: 3rem;
-        width: 10rem;
-        height: 0.2rem;
-    }
-    
-    footer p::before {
-        left: 22rem;
-        top: 3rem;
-        width: 10rem;
-        height: 0.2rem;
+.testimonios img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 2rem;
+}
+
+.testimonio1{
+    padding-bottom: 5rem;
+}
+
+.testimonio2{
+    padding-bottom: 5rem;
+}
+
+.testimonio3{
+    padding-bottom: 5rem;
+}
+
+.testimonio4{
+    padding-bottom: 5rem;
+}
+
+footer {
+    height: 13rem;
+}
+.footerLogo img {
+    height: 50px;
+    width: 50px;
+}
+
+footer p {
+    font-size: 1.6rem;
+    padding-top: 0.5rem;
+}
+
+.footerLinks ul {
+    padding-top: 1rem;
+    gap:0.5rem;
+}
+
+.linkFooter {
+    font-size: 2rem;
+}
+footer p::after{ 
+    right: 22rem;
+    top: 3rem;
+    width: 10rem;
+    height: 0.2rem;
+}
+
+footer p::before {
+    left: 22rem;
+    top: 3rem;
+    width: 10rem;
+    height: 0.2rem;
 }
 
 }
@@ -556,108 +610,101 @@ footer p::before {
 
 /*desktop*/
 @media (min-width: 1440px) {
-    
-    header {
-        padding: 3rem 0 3rem 0;
-    }
 
-    .navbar {
-        gap: 4rem;
-        padding-top: 3.5rem;
-    }
+header {
+    padding: 3rem 0 3rem 0;
+}
+.navbar {
+    gap: 4rem;
+    padding-top: 3.5rem;
+}
+.linkNav {
+    font-size: 3.5rem;
+}
+.logoBN img{
+    height: 12rem;
+    width: 12rem;
+}
 
-    .linkNav {
-        font-size: 3.5rem;
-    }
+.backgroundTestimonios {
+    height: 250rem;
+}
 
-    .logoBN img{
-        height: 12rem;
-        width: 12rem;
-    }
-    
+.testimoniosh2 {
+    font-size: 4rem;
+    margin: 8rem 0 0 12rem;
+}
 
-    .backgroundTestimonios {
-        height: 250rem;
-    }
-    
-    .testimoniosh2 {
-        font-size: 4rem;
-        margin: 8rem 0 0 12rem;
-    }
-    
-    .testimonios {
-        grid-template-rows: 45rem 45rem 45rem 45rem;
-        margin: 12rem;
-        margin-top: 10rem;
-    }
-    
-    .testimonios p {
-        font-size: 2.5rem;
-        width: 95%;
-        height: 35rem;
-        margin-left: 5rem;
-        margin-right: 3rem;
-        padding: 5rem 5rem 2rem 2rem;
-        border-radius: 3rem;
-    }
-    
-    .testimonios img {
-        height: 35rem;
-        width: 35rem;
-        border-radius: 3rem;
-    }
-    
-    .testimonio1{
-        padding-bottom: 5rem;
-    }
-    
-    .testimonio2{
-        padding-bottom: 5rem;
-    }
-    
-    .testimonio3{
-        padding-bottom: 5rem;
-    }
-    
-    .testimonio4{
-        padding-bottom: 5rem;
-    }
+.testimonios {
+    grid-template-rows: 45rem 45rem 45rem 45rem;
+    margin: 12rem;
+    margin-top: 10rem;
+}
 
-    footer {
-        height: 22rem;
-    }
+.testimonios p {
+    font-size: 2.5rem;
+    width: 95%;
+    height: 35rem;
+    margin-left: 5rem;
+    margin-right: 3rem;
+    padding: 5rem 5rem 2rem 2rem;
+    border-radius: 3rem;
+}
 
-    .footerLogo img {
-        height: 10rem;
-        width: 10rem;
-    }
-    
-    footer p {
-        font-size: 2.5rem;
-        padding-top: 1rem;
-    }
-    
-    .footerLinks ul {
-        padding-top: 2rem;
-        gap:0.5rem;
-    }
-    
-    .linkFooter {
-        font-size: 2.5rem;
-    }
+.testimonios img {
+    height: 35rem;
+    width: 35rem;
+    border-radius: 3rem;
+}
 
-    footer p::after{ 
-        right: 40rem;
-        top: 5rem;
-        width: 20rem;
-        height: 0.2rem;
-    }
-    
-    footer p::before {
-        left: 40rem;
-        top: 5rem;
-        width: 20rem;
-        height: 0.2rem;
+.testimonio1{
+    padding-bottom: 5rem;
+}
+
+.testimonio2{
+    padding-bottom: 5rem;
+}
+
+.testimonio3{
+    padding-bottom: 5rem;
+}
+
+.testimonio4{
+    padding-bottom: 5rem;
+}
+footer {
+    height: 22rem;
+}
+.footerLogo img {
+    height: 10rem;
+    width: 10rem;
+}
+
+footer p {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+.footerLinks ul {
+    padding-top: 2rem;
+    gap:0.5rem;
+}
+
+.linkFooter {
+    font-size: 2.5rem;
+}
+footer p::after{ 
+    right: 40rem;
+    top: 5rem;
+    width: 20rem;
+    height: 0.2rem;
+}
+
+footer p::before {
+    left: 40rem;
+    top: 5rem;
+    width: 20rem;
+    height: 0.2rem;
 }
 
 }
@@ -781,8 +828,8 @@ footer p::before {
     color: black;
     font-family: 'Aleo', serif;
     font-size: 1.2rem;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: auto;
+    padding: 0.3rem 0.5rem;
     background-color: rgba(255, 255, 255, 0.432);
     border-radius: 2rem;
 
@@ -792,6 +839,7 @@ footer p::before {
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
+    margin:auto;
 }
 
 .staff-p {
@@ -801,218 +849,272 @@ footer p::before {
     display: none;
 }
 
+/*Mobile L*/
+@media (min-width:425px) { 
+
+    .staff-p {
+    display: block;
+    text-align: center;
+    font-family: 'Aleo', serif;
+    font-size: 1rem;
+    color: rgb(161, 161, 161);
+    padding: 0 1rem 0 1rem;
+    
+}
+
+.staff a {
+    margin: auto;
+    padding: 0.3rem 0.7rem;
+}
+
+.staff-info {
+    gap: 1.2rem;
+    
+}
+
+.staff img {
+    margin: auto;
+}
+
+.secondSection img {
+    bottom: 6rem;
+    left: 5rem;
+}
+
+}
+
 /*tablet*/
 
 @media (min-width:768px) {
 
-    .backgroundSobreNosotros {
-        height: 70rem;
-    }
-    
-    .firstSectionText{
-        font-size: 2rem;
-        line-height: 2rem;
-        letter-spacing: 0.2rem;
-        padding: 1rem;
-        width: 55rem;
-        margin:auto;
-        margin-top: 4rem;
-        border-radius: 2rem;
-    }
-    
-    .backgroundSobreNosotros2 {
-        width: 100%;
-        height: 150rem;
-        background-position: center;
-        background-size:cover;
-        background-repeat:no-repeat;
-    }
-    
-    .secondSection {
-        display:flex;
-        position: relative;
-    }
-    
-    .secondSection img {
-        height: 35rem;
-        width: 20rem;
-        border-radius: 0.3rem;
-        position:absolute;
-        bottom: 17rem;
-        left: 5rem;
-    }
-    
-    
-    .secondSection p {
-        font-size: 1.3rem;
-        line-height: 2.5rem;
-        letter-spacing: 0.2rem;
-        border-radius: 2rem;
-        margin: 8rem 4rem 10rem 40%;
-    }
-    
-    .staffTitulo h2 { 
-        font-size: 4rem;
-        letter-spacing: 1.5rem;
-    }
-    
+.backgroundSobreNosotros {
+    height: 70rem;
+}
 
-    .staff {
-        grid-template-rows: 20rem 20rem 20rem 20rem;
-        margin: 4rem;
-        gap: 4rem;
-    }
-    
-    
-    .staff-info {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        gap: 2rem;
-    }
-    
+.firstSectionText{
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+    width: 55rem;
+    margin:auto;
+    margin-top: 4rem;
+    border-radius: 2rem;
+}
+
+.backgroundSobreNosotros2 {
+    width: 100%;
+    height: 150rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.secondSection {
+    display:flex;
+    position: relative;
+}
+
+.secondSection img {
+    height: 35rem;
+    width: 20rem;
+    border-radius: 0.3rem;
+    position:absolute;
+    bottom: 17rem;
+    left: 5rem;
+}
+
+
+.secondSection p {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.2rem;
+    border-radius: 2rem;
+    margin: 8rem 4rem 10rem 40%;
+}
+
+.staffTitulo h2 { 
+    font-size: 4rem;
+    letter-spacing: 1.5rem;
+}
+
+.staff {
+    grid-template-rows: 20rem 20rem 20rem 20rem;
+    margin: 4rem;
+    gap: 4rem;
+}
+
+
+.staff-info {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 2rem;
+}
+
+.staff-p {
+    display: block;
+}
+.staff h3 {
+    font-size: 2rem;
+}
+
+.staff p {
+    text-align: center;
+    font-family: 'Aleo', serif;
+    font-size: 1.5rem;
+    color: rgb(161, 161, 161);
+    padding: 0 3rem 0 3rem;
+}
+
+.staff a {
+    font-size: 1.2rem;
+    margin: auto;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+
+}
+
+.staff img {
+    height: 15rem;
+    width: 15rem;
+    margin: 2rem 0 0 2rem;
+    border-radius: 50%;
+}
+}
+
+.staff-p2 {
+    display: none;
+}
+
+/*Laptop*/
+@media (min-width:1024px) {
+
     .staff-p {
         display: block;
     }
-
-    .staff h3 {
-        font-size: 2rem;
-}
+    
+    .staff-p2 {
+        display: block;
+    }
 
     .staff p {
-            text-align: center;
-            font-family: 'Aleo', serif;
-            font-size: 1.5rem;
-            color: rgb(161, 161, 161);
-            padding: 0 3rem 0 3rem;
+        font-size: 1.3rem
     }
-    
+
+    .staff h3 {
+        margin: 0 25rem 0 25rem;
+        font-size: 2.5rem;
+        border-bottom:  2px solid black;
+    }
+
 
     .staff a {
-        font-size: 1.5rem;
-        margin-left: 40%;
-        margin-right: 40%;
-        border-radius: 2rem;
-    
-    }
-    
-    .staff img {
-        height: 15rem;
-        width: 15rem;
-        margin: 2rem 0 0 2rem;
-        border-radius: 50%;
+        display: none;
     }
 }
 
-    .staff-p2 {
-        display: none;
-    }
 
 /*desktop*/
 @media (min-width: 1440px) {
 
-    .backgroundSobreNosotros {
-        height: 100rem;
-    }
-    
+.backgroundSobreNosotros {
+    height: 100rem;
+}
 
-    .firstSectionText{
-        font-size: 3rem;
-        line-height: 3rem;
-        letter-spacing: 0.3rem;
-        padding: 1.5rem;
-        width: 80rem;
-        margin:auto;
-        margin-top: 4rem;
-        border-radius: 2rem;
-    }
-    
-    .backgroundSobreNosotros2 {
-        width: 100%;
-        height: 230rem;
-        background-position: center;
-        background-size:cover;
-        background-repeat:no-repeat;
-    }
-    
-    .secondSection {
-        display:flex;
-        position: relative;
-    }
-    
-    .secondSection img {
-        height: 50rem;
-        width: 30rem;
-        border-radius: 0.3rem;
-        position:absolute;
-        bottom: 17rem;
-        left: 12rem;
-    }
-    
-    
-    .secondSection p {
-        font-size: 2.3rem;
-        line-height: 3rem;
-        letter-spacing: 0.3rem;
-        border-radius: 2rem;
-        margin: 12rem 12rem 10rem 35%;
-        color: rgb(103, 103, 103);
-        
-    }
-    
-    .staffTitulo h2 { 
-        font-size: 7rem;
-        letter-spacing: 4rem;
-    }
-    
-    .staff {
-        grid-template-rows: 30rem 30rem 30rem 30rem;
-        margin: 10rem 12rem 8rem 12rem;
-        gap: 12rem;
-    }
+.firstSectionText{
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: 0.3rem;
+    padding: 1.5rem;
+    width: 80rem;
+    margin:auto;
+    margin-top: 4rem;
+    border-radius: 2rem;
+}
 
-    
-    .staff-info {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        gap: 2rem;
-    }
-    
-    .staff-p {
-        display: block;
-    }
-    
-    .staff-p2 {
-        display: block;
-    }
+.backgroundSobreNosotros2 {
+    width: 100%;
+    height: 230rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
 
-    .staff h3 {
-        margin: 0 20rem 0 20rem;
-        font-size: 4rem;
-        border-bottom:  2px solid black;
-    }
+.secondSection {
+    display:flex;
+    position: relative;
+}
 
-    .staff p {
-            text-align: center;
-            font-family: 'Aleo', serif;
-            font-size: 2rem;
-            color: rgb(161, 161, 161);
-            padding: 0rem 3rem 0 3rem;
-    }
-    
+.secondSection img {
+    height: 50rem;
+    width: 30rem;
+    border-radius: 0.3rem;
+    position:absolute;
+    bottom: 17rem;
+    left: 12rem;
+}
 
-    .staff a {
-        display: none;
+
+.secondSection p {
+    font-size: 2.3rem;
+    line-height: 3rem;
+    letter-spacing: 0.3rem;
+    border-radius: 2rem;
+    margin: 12rem 12rem 10rem 35%;
+    color: rgb(103, 103, 103);
     
-    }
-    
-    .staff img {
-        height: 25rem;
-        width: 25rem;
-        margin: 5rem 0 0 2rem;
-        border-radius: 50%;
-    }
+}
+
+.staffTitulo h2 { 
+    font-size: 7rem;
+    letter-spacing: 4rem;
+}
+
+.staff {
+    grid-template-rows: 30rem 30rem 30rem 30rem;
+    margin: 10rem 12rem 8rem 12rem;
+    gap: 12rem;
+}
+
+.staff-info {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 2rem;
+}
+
+.staff-p {
+    display: block;
+}
+
+.staff-p2 {
+    display: block;
+}
+.staff h3 {
+    margin: 0 20rem 0 20rem;
+    font-size: 4rem;
+    border-bottom:  2px solid black;
+}
+.staff p {
+    text-align: center;
+    font-family: 'Aleo', serif;
+    font-size: 2rem;
+    color: rgb(161, 161, 161);
+    padding: 0rem 3rem 0 3rem;
+}
+
+.staff a {
+    display: none;
+
+}
+
+.staff img {
+    height: 25rem;
+    width: 25rem;
+    margin: auto;
+    border-radius: 50%;
+}
 }
 
 /* ----------------EXPERIENCIAS------------- */
@@ -1141,7 +1243,7 @@ footer p::before {
     text-align: center;
     font-family: 'aleo';
     font-size: 0.8rem;
-    padding: 1rem 1rem 0 1rem
+    padding: 1rem 0.5rem 1rem 0.5rem;
 }
 
 .descanzos img {
@@ -1155,7 +1257,7 @@ footer p::before {
     border-radius: 0.5rem;
 }
 
-.travesiasDesktopP {
+.moreInfoDesktop {
     display: none;
 }
 
@@ -1163,7 +1265,25 @@ footer p::before {
     display:none;
 }
 
+/*Mobile L*/
+@media (min-width:425px) {
 
+.travesiasP, .descanzosP {
+    font-size: 1rem;
+}
+.travesiasInfo a, .descanzos a{
+    font-size: 1rem;
+}
+
+.travesias h3, .descanzos h3 {
+    font-size: 1.2rem;
+}
+
+.travesiash2, .descanzosh2 {
+    font-size: 2.3rem;
+}
+
+}
 /*tablet*/
 
 @media (min-width:768px) {
@@ -1264,7 +1384,7 @@ footer p::before {
     border-radius: 1rem;
 }
 
-.travesiasDesktopP {
+.moreInfoDesktop {
     display: none;
 }
 
@@ -1318,11 +1438,11 @@ footer p::before {
     font-size: 3rem;
 }
 
-.travesiasDesktopP {
+.moreInfoDesktop {
     display: block;
     text-align: center;
     font-family: 'aleo';
-    font-size: 3rem;
+    font-size: 1.5rem;
     padding: 2rem 0rem 2rem 0rem;
     width: 80%;
     margin: auto;
