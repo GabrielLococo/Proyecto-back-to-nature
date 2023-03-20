@@ -1374,3 +1374,23 @@ footer p::before {
     padding: 1rem 0rem 0.5rem 0rem;
 }
 }
+
+
+/*---------CONTACTO-----------*/
+
+/*mobil*/
+
+
+.backgroundContacto {
+    background-image: url(../assets/persona-paisaje1.jpg);
+    width: 100%;
+    height: 50rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.botonEnviar {
+    font-size: 1rem
+}
+
