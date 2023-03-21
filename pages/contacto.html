@@ -29,39 +29,39 @@
             </nav>
         </header>
         <main>
-            <section class="container-fluid d-flex justify-content-center">
+            <section class="container-fluid d-flex justify-content-center ">
                 <div
-                    class="card shadow mt-5 col-xs-12 col-sm-6 col-md-6 col-lg-6 bg-success p-2 text-dark bg-opacity-10  p-4 ">
+                    class="card shadow mt-5 mb-5 p-5 col-xs-12 col-sm-8 col-md-8 col-lg-6 bg-success text-dark bg-opacity-10  ">
                     <div class="mb-4 d-flex ">
                         <h4 class="m-1"> Contacto</h4>
                     </div>
                     <div class="mb-1">
                         <form id="contacto">
-                            <div class="mb-4 d-flex justify-content-between">
-                                <div>
+                            
+                                <div class="mb-4">
                                     <label for="nombre">Nombre</label>
-                                    <input type="text" class="form-control" name="nombre" id="nombre"
-                                        placeholder="Nombre" required>
+                                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" required>
                                 </div>
-                                <div>
+                                <div class="mb-4">
                                     <label for="apellido">Apellido</label>
-                                    <input type="text" class="form-control" name="apellido" id="apellido"
-                                        placeholder="Apellido" required>
+                                    <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido" required>
                                 </div>
-                            </div>
+                            
                             <div class="mb-4">
                                 <label for="correo"> Correo</label>
-                                <input type="email" class="form-control" name="correo" id="correo" placeholder="E-mail"
-                                    required>
+                                <input type="email" class="form-control" name="correo" id="correo" placeholder="E-mail" required>
                             </div>
                             <div class="mb-4">
                                 <label for="mensaje">Mensaje</label>
-                                <textarea name="mensaje" id="mensaje" class="form-control"
-                                    placeholder="Consulta"></textarea>
+                                <textarea name="mensaje" id="mensaje" class="form-control" placeholder="Consulta"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <input type="checkbox" name="" id="toggle">
+                                <label for="toggle" class="fs-2 ms-3 text-white"><em>Quiero recibir el newsletter de Back to Nature</em></label>
                             </div>
                             <div class="mb-2">
-                                <button id="botton" class="col-12 btn btn-primary d-flex justify-content-between ">
-                                    <span class="botonEnviar">Enviar </span>
+                                <button id="botton" class="col-2 btn btn-secondary d-flex justify-content-center ">
+                                    <span class="fs-6">Enviar </span>
                                 </button>
                             </div>
                         </form>
@@ -70,8 +70,8 @@
             </section>
     </section>
     </main>
-    <aside>
-        <div class="socialMedia"> <!--contenedor de las redes sociales-->
+    <aside class="asideContacto">
+        <div class="socialMediaContacto"> <!--contenedor de las redes sociales-->
             <img src="../assets/whatsapp.png" alt="whatsapp">
             <img src="../assets/instagram.png" alt="instagram">
             <img src="../assets/facebook.png" alt="facebook">

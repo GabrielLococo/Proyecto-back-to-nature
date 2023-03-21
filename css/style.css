@@ -100,18 +100,18 @@ header {
     
 }
 
-aside {
+.asideInicio {
     background-color: black;
 }
 
-.socialMedia {
+.socialMediaInicio {
 display: flex;
 justify-content: center;
 gap: 2rem;
 padding: 2rem 0 2rem 0;
 }
 
-.socialMedia img {
+.socialMediaInicio img {
     width: 1.5rem;
     height: 1.5rem;
 }
@@ -232,11 +232,11 @@ footer p::before {
         padding-top: 6rem;
     }
 
-    aside {
+    .asideInicio {
         position:relative;
     }
     
-    .socialMedia {
+    .socialMediaInicio {
         display: flex;
         flex-direction: column;
         position:absolute;
@@ -247,7 +247,7 @@ footer p::before {
         padding: 1rem 0.5rem 1rem 0.5rem;
     }
     
-    .socialMedia img {
+    .socialMediaInicio img {
         height: 2.5rem;
         width: 2.5rem;
     }
@@ -316,7 +316,7 @@ footer p::before {
         line-height: 10rem;
     }
 
-    .socialMedia {
+    .socialMediaInicio {
         top: -100rem;
     }
 
@@ -366,11 +366,11 @@ footer p::before {
         padding-top: 12rem;
     }
 
-    aside {
+    .asideInicio {
         position:relative;
     }
     
-    .socialMedia {
+    .socialMediaInicio {
         display: flex;
         flex-direction: column;
         position:absolute;
@@ -382,7 +382,7 @@ footer p::before {
         gap: 3.5rem;
     }
     
-    .socialMedia img {
+    .socialMediaInicio img {
         height: 4.5rem;
         width: 4.5rem;
     }
@@ -1510,7 +1510,60 @@ footer p::before {
     background-repeat:no-repeat;
 }
 
-.botonEnviar {
-    font-size: 1rem
+.asideContacto {
+    background-color: black;
+}
+
+.socialMediaContacto {
+display: flex;
+justify-content: center;
+gap: 2rem;
+padding: 2rem 0 2rem 0;
+}
+
+.socialMediaContacto img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/*Tablet*/
+@media (min-width:768px) {
+
+.backgroundContacto {
+    height: 60rem;
+}
+
+.socialMediaContacto {
+    gap: 3rem;
+    padding: 3rem 0 3rem 0;
+    }
+    
+.socialMediaContacto img {
+    width: 2.5rem;
+    height: 2.5rem;
+    }
+
+
+}
+
+@media (min-width:1024px) {
+    
+.backgroundContacto {
+    height: 70rem;
+}
+
+.socialMediaContacto {
+    gap: 4rem;
+    padding: 4rem 0 4rem 0;
+    }
+    
+.socialMediaContacto img {
+    width: 3rem;
+    height: 3rem;
+    }
+
+
+
+
 }
 
