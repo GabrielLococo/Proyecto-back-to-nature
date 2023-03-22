@@ -27,6 +27,18 @@ colores
 /*mobil*/
 
 
+
+/*________INICIO ESTILOS NAVBAR_______*/
+
+header {
+    background: linear-gradient(180deg, rgba(0,0,0), rgba(0,0,0,0));
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    
+}
+
 .nav-wraper{
     width: 100%;
 }
@@ -38,10 +50,16 @@ nav{
     padding: 2rem 2rem;
 }
 
+nav a img {
+    height: 3rem;
+    width: 3rem;
+}
+
 .menu {
     position: fixed;
     top: 7rem;
     left: -13%;
+    z-index: 999;
     
 }
 
@@ -53,8 +71,13 @@ nav{
 
 .menu ul li a{
     text-decoration: none;
-    color: white;
+    color: rgb(228, 227, 227);
     font-size: 2rem;  
+    font-family:'Barlow Condensed', sans-serif;
+}
+
+.menu ul li a:hover {
+    text-shadow: 0.4rem 0.4rem 0.2rem black;
 }
 
 nav #toggle, nav label{
@@ -64,21 +87,21 @@ nav #toggle, nav label{
 
 @media (max-width: 768px){
 
-nav .menu{
+.menu{
     width: 100%;
     height: 0;
     overflow:hidden;
     transition: 0.6s;
 }
 
-.menu ul{
+    .menu ul{
 flex-direction: column;
 align-items: end;
 }
 
 nav label{
     display: flex;
-    color: white;
+    color: rgb(228, 227, 227);
     cursor: pointer;
 }
 
@@ -86,47 +109,19 @@ nav #toggle:checked ~ .menu{
     height:100%;
 }
 
+.backgroundTestimonios .menu ul li a {
+    color: black ;
+}
+.backgroundExperiencias .menu ul li a {
+    color: black ;
+}
+.backgroundContacto .menu ul li a {
+    color: black ;
 }
 
-
-header {
-    background: linear-gradient(180deg, rgba(0,0,0), rgba(0,0,0,0));
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    
 }
 
-.navbar {
-    list-style: none;
-    gap: 1rem;
-    display: flex;
-    list-style: none;
-    padding-top: 1rem;
-}
-
-nav a img {
-    height: 3rem;
-    width: 3rem;
-}
-
-.linkNav {
-    text-decoration: none;
-    color: rgb(228, 227, 227);
-    font-size: 1rem;
-    font-family:'Barlow Condensed', sans-serif;
-}
-
-.linkNav:hover {
-    text-shadow: 0.4rem 0.4rem 0.2rem black;
-}
-
-.logoBN img{
-    height: 3rem;
-    width: 3rem;
-}
-
+/*________FIN ESTILOS NAVBAR_______*/
 
 .banner1 {
     background-image: url(../assets/persona-paisaje1.jpg);
@@ -253,30 +248,28 @@ footer p::before {
 
 @media (min-width:768px) {
 
-    .menu {
-        position:static;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        
-    }
-    
-    .menu ul {
-        gap:3rem;
-        
-    }
-
-
-
-header {
-    padding: 2rem 0 2rem 0;
+/*inicio estilos para el menu hamburguesa*/
+.menu {
+    position:static;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.linkNav {
+.menu ul {
+    gap:3rem;
+}
+/*------fin---------*/
+
+header {
+    padding: 3rem 0 3rem 0;
+}
+
+.menu ul li a {
     font-size: 2rem;
 }
 
-.logoBN img{
+nav a img{
     height: 5rem;
     width: 5rem;
 }
@@ -392,6 +385,16 @@ footer p::before {
     width: 4rem;
 }
 
+.menu ul li a {
+    font-size: 2.5rem;
+}
+
+nav a img{
+    height: 6rem;
+    width: 6rem;
+}
+
+
 }
 
 
@@ -405,13 +408,16 @@ header {
     gap: 4rem;
     padding-top: 3.5rem;
 }
-.linkNav {
-    font-size: 3.5rem;
+
+.menu ul li a {
+    font-size: 3rem;
 }
-.logoBN img{
-    height: 12rem;
-    width: 12rem;
+
+nav a img{
+    height: 8rem;
+    width: 8rem;
 }
+
 
 .banner1 {
     height: 120rem;
@@ -514,7 +520,7 @@ footer p::before {
     "testimonio2"
     "testimonio3"
     "testimonio4";
-    margin: 2rem;
+    margin: 2rem ;
     margin-top: 3rem;
 }
 
@@ -561,12 +567,24 @@ footer p::before {
 }
 
 
+
+
 /*Mobile L*/
 @media (min-width:425px) {
 
 .testimonios p {
     font-size: 0.8rem;
 }
+
+.testimonios {
+    margin: 2rem 4rem
+}
+
+.testimoniosh2 {
+    margin: 6rem 0 4rem 4rem;
+    color:black;
+}
+
 }
 
 
@@ -581,12 +599,12 @@ footer p::before {
 
 .testimoniosh2 {
     font-size: 3rem;
-    margin: 4rem 0 0 5rem;
+    margin: 4rem 0 4rem 10rem;
 }
 
 .testimonios {
     grid-template-rows: 25rem 25rem 25rem 25rem;
-    margin: 5rem;
+    margin: 4rem 10rem;
     margin-top: 6rem;
     gap:5rem
 }
