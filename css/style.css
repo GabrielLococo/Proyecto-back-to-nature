@@ -5,3 +5,162 @@ nav {
   nav img {
     width: 100px;
     height: 100px; }
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 6.5rem; }
+  footer img {
+    height: 50px;
+    width: 160px;
+    display: flex;
+    margin: auto; }
+  footer p {
+    font-size: 0.8rem;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #464646; }
+  footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+    gap: 0.5rem; }
+  footer a {
+    text-decoration: none;
+    font-size: 0.5rem;
+    color: #5d5d5d; }
+  footer a:hover {
+    color: white; }
+  @media screen and (min-width: 768px) {
+    footer {
+      height: 13rem; }
+      footer img {
+        height: 80px;
+        width: 220px; }
+      footer p {
+        font-size: 1.2rem;
+        padding-top: 0.5rem; }
+      footer ul {
+        padding-top: 1rem;
+        gap: 0.7rem; }
+      footer a {
+        font-size: 1rem; } }
+  @media screen and (min-width: 1440px) {
+    footer {
+      height: 22rem; }
+      footer img {
+        height: 120px;
+        width: 350px; }
+      footer p {
+        font-size: 2.5rem;
+        padding-top: 1rem; }
+      footer ul {
+        padding-top: 2rem;
+        gap: 0.5rem; }
+      footer a {
+        font-size: 2rem; } }
+
+.banner1 {
+  background-image: url(../assets/persona-paisaje1.jpg);
+  width: 100%;
+  height: 50rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .banner1 h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10rem;
+    letter-spacing: 0.6rem;
+    line-height: 6rem;
+    color: #000000cf; }
+
+.banner2 {
+  background-image: url(../assets/gente-fuego.jpg);
+  width: 100%;
+  height: 40rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .banner2 p {
+    font-family: 'Aleo', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #949393;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    padding-top: 7rem;
+    margin: 0 1rem 0 1rem; }
+  .banner2 strong {
+    font-size: 1.2rem; }
+
+.asideInicio {
+  background-color: black; }
+
+.socialMediaInicio {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0rem 0rem 2rem 0; }
+  .socialMediaInicio img {
+    width: 1.5rem;
+    height: 1.5rem; }
+
+@media screen and (min-width: 768px) {
+  .banner1 {
+    height: 70rem; }
+    .banner1 h1 {
+      font-size: 3.2rem;
+      padding-top: 5rem;
+      letter-spacing: 2rem;
+      line-height: 10rem; }
+  .banner2 {
+    height: 60rem; }
+    .banner2 p {
+      font-size: 1.7rem;
+      line-height: 3.5rem;
+      letter-spacing: 0.3rem;
+      padding-top: 10rem; }
+    .banner2 strong {
+      font-size: 1.8rem; }
+  .asideInicio {
+    position: relative; }
+  .socialMediaInicio {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    top: -100rem;
+    background-color: rgba(122, 119, 119, 0.5);
+    border-radius: 10px 0px 0px 10px;
+    padding: 1rem 0.5rem 1rem 0.5rem; }
+    .socialMediaInicio img {
+      height: 2.5rem;
+      width: 2.5rem; } }
+
+@media screen and (min-width: 1024px) {
+  .banner1 {
+    height: 80rem; }
+    .banner1 h1 {
+      font-size: 4rem;
+      padding-top: 6rem;
+      letter-spacing: 3rem;
+      line-height: 15rem; }
+  .banner2 {
+    height: 70rem; }
+    .banner2 p {
+      font-size: 2.3rem;
+      line-height: 4rem;
+      letter-spacing: 0.4rem;
+      padding-top: 10rem; }
+    .banner2 strong {
+      font-size: 2.5rem; }
+  .socialMediaInicio {
+    top: -115rem;
+    gap: 3rem; }
+  .socialMediaInicio img {
+    height: 3rem;
+    width: 3rem; } }
