@@ -25,3 +25,9 @@
         @content;
     }
 }
+
+@mixin hamburguesa {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
