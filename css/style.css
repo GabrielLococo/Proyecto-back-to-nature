@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Montserrat:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&family=Barlow+Condensed:wght@300;400;500&family=Montserrat:wght@300;400;500;700&display=swap");
 /*MEDIAQUERIES*/
+/*grid*/
 nav {
   font-family: "Barlow condensed"; }
   nav img {
@@ -164,3 +165,79 @@ footer {
   .socialMediaInicio img {
     height: 3rem;
     width: 3rem; } }
+
+.backgroundTestimonios {
+  background-image: url(../assets/persona-paisaje3.jpg);
+  width: 100%;
+  height: 160rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .backgroundTestimonios h2 {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    margin: 6rem 0 4rem 4rem;
+    color: black; }
+
+.testimonios {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 12rem 12rem 12rem 12rem 12rem 12rem 12rem 12rem 12rem 12rem;
+  gap: 2rem;
+  grid-template-areas: "testimonio1img" "testimonio1p" "testimonio2img" "testimonio2p" "testimonio3img" "testimonio3p" "testimonio4img" "testimonio4p" "testimonio5img" "testimonio5p";
+  margin: 4rem; }
+  .testimonios p {
+    font-family: 'Aleo', serif;
+    background-color: #a6a6a662;
+    font-size: 0.6rem;
+    width: 100%;
+    height: 12rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem; }
+  .testimonios img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+@media screen and (min-width: 425px) {
+  .testimonios img {
+    display: flex;
+    margin: auto; }
+  .testimonios p {
+    font-size: 0.75rem; } }
+
+@media screen and (min-width: 768px) {
+  .backgroundTestimonios {
+    height: 100rem; }
+  .testimonios {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 15rem 15rem 15rem 15rem 15rem;
+    gap: 0rem;
+    grid-template-areas: "testimonio1" "testimonio2" "testiomnio3" "testimonio4" "testimonio5";
+    margin: 4rem; }
+    .testimonios img {
+      display: inline-block; }
+    .testimonios p {
+      font-size: 0.8rem; } }
+
+@media screen and (min-width: 1024px) {
+  .backgroundTestimonios {
+    height: 150rem; }
+    .backgroundTestimonios h2 {
+      font-size: 3rem; }
+  .testimonios {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20rem 20rem 20rem 20rem 20rem;
+    gap: 5rem 0rem; }
+    .testimonios img {
+      height: 20rem;
+      width: 20rem; }
+    .testimonios p {
+      height: 20rem;
+      font-size: 1.3rem; } }

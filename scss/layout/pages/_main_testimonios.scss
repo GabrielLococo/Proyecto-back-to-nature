@@ -1,0 +1,107 @@
+.backgroundTestimonios {
+    background-image: url(../assets/persona-paisaje3.jpg);
+    width: 100%;
+    height: 160rem;
+    background-position:center ;
+    background-size:cover;
+    background-repeat:no-repeat;
+    h2 {
+    font-family: 'Montserrat' ;
+    font-size: 1.5rem;
+    margin: 6rem 0 4rem 4rem;
+    color:black;
+    }
+}
+
+.testimonios {
+    @include grid( 100% ,12rem 12rem 12rem 12rem 12rem 12rem 12rem 12rem 12rem 12rem, 2rem);
+    grid-template-areas: 
+    "testimonio1img"
+    "testimonio1p"
+    "testimonio2img"
+    "testimonio2p"
+    "testimonio3img"
+    "testimonio3p"
+    "testimonio4img"
+    "testimonio4p"
+    "testimonio5img"
+    "testimonio5p";
+    margin: 4rem ;
+    
+    p {
+    font-family:'Aleo', serif;
+    background-color: #a6a6a662;
+    font-size: 0.6rem;
+    width: 100%;
+    height: 12rem;
+    padding: 1rem ;
+    text-align: center;
+    border-radius: 1rem;
+    }
+    img {
+        height: 12rem;
+        width: 12rem;
+        border-radius: 1rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@include mobileL {
+    .testimonios {
+        img {
+            display:flex;
+            margin: auto;
+        }
+        p {
+            font-size: 0.75rem;
+        }
+    }
+
+}
+
+@include tablet {
+    .backgroundTestimonios{
+        height: 100rem;
+    }
+    .testimonios {
+        @include grid( 40% 60% ,15rem 15rem 15rem 15rem 15rem, 0rem );
+        grid-template-areas:
+        "testimonio1"
+        "testimonio2"
+        "testiomnio3"
+        "testimonio4"
+        "testimonio5";
+    margin: 4rem ;
+    img {
+        display: inline-block
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    }
+}
+
+@include laptop {
+
+    .backgroundTestimonios{
+        height: 150rem;
+        h2 {
+            font-size: 3rem;
+        }
+    }
+    .testimonios {
+        @include grid (40% 60% , 20rem 20rem 20rem 20rem 20rem, 5rem 0rem) ;
+        
+        img {
+            height: 20rem;
+            width: 20rem;
+        }
+        p {
+            height: 20rem;
+            font-size: 1.3rem;
+        }
+    }
+}
