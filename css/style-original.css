@@ -1171,7 +1171,7 @@ footer p::before {
     
 }
 
-.travesiasInfo a, .descanzos a{
+.travesias a, .descanzos a{
     display: flex;
     justify-content: center;
     text-decoration: none;
