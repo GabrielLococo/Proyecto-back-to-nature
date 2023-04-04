@@ -392,7 +392,7 @@ footer {
   margin: 0; }
 
 .descanzosInfo1, .descanzosInfo2 {
-  background-color: rgba(255, 255, 255, 0.399);
+  background-color: #ffffff66;
   border-radius: 1rem; }
 
 .moreInfoDesktop {
@@ -400,3 +400,81 @@ footer {
 
 .moreInfo {
   display: none; }
+
+@media screen and (min-width: 768px) {
+  .backgroundExperiencias {
+    height: 130rem; }
+    .backgroundExperiencias h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 8rem 0rem 8rem 0rem;
+      letter-spacing: 0.8rem; }
+  .travesias {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 12rem 12rem 12rem;
+    gap: 4rem 2rem; }
+    .travesias .travesiasP {
+      font-size: 0.9rem;
+      width: 90%; }
+    .travesias .travesiasInfo {
+      width: 90%; }
+    .travesias h3 {
+      font-size: 1.3rem; }
+    .travesias a {
+      display: none; }
+    .travesias .moreInfo {
+      display: block;
+      text-align: center;
+      font-family: 'Monserrat';
+      font-size: 0.9rem;
+      padding: 0.5rem 0rem 0.5rem 0rem;
+      border-top: 1px solid #035e03;
+      width: 90%;
+      margin: auto;
+      color: #035e03; }
+  .descanzos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 4rem 1rem;
+    margin: 4rem; }
+    .descanzos h3 {
+      font-size: 1.3rem; }
+    .descanzos a {
+      display: none; }
+    .descanzos .descanzosP {
+      font-size: 0.9rem; }
+    .descanzos .moreInfo {
+      display: block;
+      text-align: center;
+      font-family: 'Monserrat';
+      font-size: 0.9rem;
+      padding: 0.5rem 0rem 0.5rem 0rem;
+      border-top: 1px solid #035e03;
+      width: 90%;
+      margin: auto;
+      color: #035e03; }
+  .descanzosImg1 {
+    grid-column: 3/4;
+    grid-row: 1/2; }
+  .descanzosInfo1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: rgba(255, 255, 255, 0.362); }
+  .descanzosInfo2 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: rgba(255, 255, 255, 0.362); }
+  .descanzosImg2 {
+    grid-column: 1/2;
+    grid-row: 2/3; } }
+
+@media screen and (min-width: 1024px) {
+  .backgroundExperiencias h2 {
+    font-size: 3rem;
+    margin: 8rem 0rem 0rem 0rem; }
+  .travesias {
+    margin: 6rem; }
+  .descanzos {
+    margin: 8rem; } }
