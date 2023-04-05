@@ -75,7 +75,7 @@ footer {
     font-weight: 600;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 10rem;
+    margin-top: 6rem;
     letter-spacing: 0.6rem;
     line-height: 6rem;
     color: #000000cf; }
@@ -171,14 +171,14 @@ footer {
 .backgroundTestimonios {
   background-image: url(../assets/persona-paisaje3.jpg);
   width: 100%;
-  height: 160rem;
+  height: 170rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
   .backgroundTestimonios h2 {
     font-family: 'Montserrat';
     font-size: 1.5rem;
-    margin: 6rem 0 4rem 4rem;
+    margin: 2rem 0 4rem 4rem;
     color: black; }
 
 .testimonios {
@@ -313,7 +313,7 @@ footer {
 .backgroundExperiencias {
   background-image: url(../assets/persona-paisaje2.jpg);
   width: 100%;
-  height: 165rem;
+  height: 175rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
