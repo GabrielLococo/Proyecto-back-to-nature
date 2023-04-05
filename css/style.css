@@ -500,11 +500,13 @@ footer {
   color: #949393;
   line-height: 1rem;
   padding: 1rem;
-  margin: 1rem;
   width: 90%;
   background-color: #ffffff10;
   border-radius: 1rem;
+  margin: auto;
   margin-top: 3rem; }
+  .firstSectionText p {
+    margin: auto; }
 
 .backgroundSobreNosotros2 {
   background-image: url(../assets/sobre-nosotros2.jpg);
