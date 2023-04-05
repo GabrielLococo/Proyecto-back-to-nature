@@ -203,7 +203,8 @@ footer {
     border-radius: 1rem;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin: auto; }
 
 @media screen and (min-width: 425px) {
   .testimonios img {
@@ -478,3 +479,188 @@ footer {
     margin: 6rem; }
   .descanzos {
     margin: 8rem; } }
+
+/*SOBRE NOSOTROS*/
+.backgroundSobreNosotros {
+  background-image: url(../assets/sobre-nosotros1.jpg);
+  width: 100%;
+  height: 50rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .backgroundSobreNosotros .nav-link {
+    color: #949393; }
+  .backgroundSobreNosotros .nav-link:hover {
+    text-shadow: 0.4rem 0.4rem 0.2rem #d7d7d7; }
+
+.firstSectionText {
+  font-family: 'Aleo', serif;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #949393;
+  line-height: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 90%;
+  background-color: #ffffff10;
+  border-radius: 1rem;
+  margin-top: 3rem; }
+
+.backgroundSobreNosotros2 {
+  background-image: url(../assets/sobre-nosotros2.jpg);
+  width: 100%;
+  height: 90rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.secondSection {
+  display: flex;
+  position: relative; }
+  .secondSection img {
+    height: 15rem;
+    width: 8rem;
+    border-radius: 0.4rem;
+    position: absolute;
+    bottom: 17rem;
+    left: 2rem; }
+  .secondSection p {
+    font-family: 'Aleo', serif;
+    font-size: 0.8rem;
+    text-align: center;
+    color: black;
+    margin: 10rem 1rem 1rem 1rem;
+    padding: 1rem;
+    background-color: #ffffff10;
+    border-radius: 1rem; }
+
+.staffTitulo h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  margin: 1rem;
+  color: #a1a1a1; }
+
+.staff {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 12rem 12rem 12rem 12rem;
+  gap: 2rem;
+  grid-template-areas: "staff1" "staff2" "staff3" "staff4";
+  margin: 1rem; }
+  .staff h3 {
+    text-align: center;
+    font-family: 'Aleo', serif;
+    font-size: 1.5rem;
+    color: #a1a1a1; }
+  .staff a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Aleo', serif;
+    font-size: 0.7rem;
+    margin: auto;
+    padding: 0.3rem 0.5rem;
+    background-color: #ffffff6e;
+    border-radius: 2rem; }
+  .staff img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin: auto; }
+
+.staff-info {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 2rem; }
+
+.staff1, .staff2, .staff3, .staff4 {
+  display: flex;
+  gap: 1rem; }
+
+.staff-p {
+  display: none; }
+
+.staff-p2 {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  .backgroundSobreNosotros {
+    height: 70rem; }
+  .firstSectionText {
+    font-size: 1.2rem;
+    width: 80%;
+    padding: 1.3rem;
+    margin: auto;
+    margin-top: 4rem;
+    line-height: 1.4rem; }
+  .backgroundSobreNosotros2 {
+    height: 150rem; }
+  .secondSection img {
+    height: 24rem;
+    width: 12rem;
+    bottom: 18rem;
+    left: 4rem; }
+  .secondSection p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+    border-radius: 2rem;
+    margin: 4rem 4rem 10rem 40%; }
+  .staffTitulo h2 {
+    font-size: 3rem;
+    letter-spacing: 1.5rem; }
+  .staff-info {
+    gap: 0.5rem; }
+  .staff {
+    grid-template-rows: 20rem 20rem 20rem 20rem;
+    margin: 4rem;
+    gap: 4rem; }
+    .staff h3 {
+      font-size: 2rem;
+      border-bottom: 2px solid black;
+      width: 80%;
+      margin: auto; }
+    .staff p {
+      font-size: 0.8rem;
+      padding: 0 3rem 0 3rem;
+      margin: 0.5rem;
+      color: #a1a1a1;
+      text-align: center; }
+    .staff a {
+      display: none; }
+    .staff img {
+      height: 15rem;
+      width: 15rem;
+      margin: 2rem 0 0 2rem; }
+    .staff .staff-p {
+      display: block; }
+    .staff .staff-p2 {
+      display: block; } }
+
+@media screen and (min-width: 1024px) {
+  .firstSectionText {
+    width: 70%;
+    font-size: 1.4rem;
+    line-height: 1.8rem; }
+    .firstSectionText p {
+      margin: auto; }
+  .staffTitulo h2 {
+    font-size: 3.5rem;
+    letter-spacing: 2rem; }
+  .staff p {
+    font-size: 1rem; }
+  .secondSection img {
+    height: 30rem;
+    width: 15rem;
+    bottom: 18rem;
+    left: 6rem; }
+  .secondSection p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    border-radius: 2rem;
+    margin: 6rem 4rem 10rem 40%; } }
