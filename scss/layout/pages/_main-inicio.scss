@@ -17,7 +17,7 @@
             margin-top: 6rem;
             letter-spacing: 0.6rem;
             line-height: 6rem;
-            color: #000000cf;
+            color: $color-texto-secundario;
         
         }
 }
@@ -33,7 +33,7 @@
             font-family: 'Aleo', serif;
             font-size: 1.3rem;
             text-align: center;
-            color: #949393;
+            color: $color-texto-principal;
             line-height: 2rem;
             letter-spacing: 0.1rem;
             padding-top: 7rem;
@@ -92,7 +92,7 @@
         position:absolute;
         right: 0px;
         top: -100rem;
-        background-color: rgba(122, 119, 119, 0.5);
+        background-color: #7a777780;
         border-radius: 10px 0px 0px 10px ;
         padding: 1rem 0.5rem 1rem 0.5rem;
             img {

@@ -8,10 +8,10 @@
     background-size:cover;
     background-repeat:no-repeat;
     .nav-link {
-        color:#949393;
+        color: $color-texto-principal;
     }
     .nav-link:hover {
-        text-shadow: 0.4rem 0.4rem 0.2rem rgb(215, 215, 215);
+        text-shadow: 0.4rem 0.4rem 0.2rem #d7d7d7;
     }
 }
 
@@ -19,7 +19,7 @@
     font-family: 'Aleo', serif;
     font-size: 0.7rem;
     text-align: center;
-    color: #949393;
+    color: $color-texto-principal;
     line-height: 1rem;
     padding: 1rem;
     width: 90%;
@@ -58,7 +58,7 @@
         font-family: 'Aleo', serif;
         font-size: 0.8rem;
         text-align: center;
-        color: black;
+        color: $color-texto-secundario;
         margin: 10rem 1rem 1rem 1rem;
         padding: 1rem;
         background-color: #ffffff10;
@@ -72,7 +72,7 @@
     letter-spacing: 0.5rem;
     text-align: center;
     margin:1rem;
-    color: #a1a1a1;
+    color: $color-texto-principal;
 }
 
 .staff {
@@ -87,13 +87,13 @@
         text-align: center;
         font-family: 'Aleo', serif;
         font-size: 1.5rem;
-        color: #a1a1a1;
+        color: $color-texto-principal;
     }
     a {
         display: flex;
         justify-content: center;
         text-decoration: none;
-        color: black;
+        color:$color-texto-secundario;
         font-family: 'Aleo', serif;
         font-size: 0.7rem;
         margin: auto;
@@ -184,7 +184,7 @@
         font-size: 0.8rem;
         padding: 0 3rem 0 3rem;
         margin: 0.5rem;
-        color:#a1a1a1;
+        color: $color-texto-principal;
         text-align: center;
     }
     a {

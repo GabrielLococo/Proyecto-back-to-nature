@@ -15,7 +15,7 @@ footer {
     font-size: 0.8rem;
     margin-bottom: 0px;
     text-align: center;
-    color: #464646;
+    color: $color-texto-principal;
     
     }
 
@@ -30,7 +30,7 @@ footer {
     a {
     text-decoration: none;
     font-size: 0.5rem;
-    color: #5d5d5d;
+    color: $color-texto-principal;
     }
 
     a:hover {
