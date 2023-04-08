@@ -20,7 +20,8 @@ footer {
     height: 50px;
     width: 160px;
     display: flex;
-    margin: auto; }
+    margin: auto;
+    padding-top: 0.3rem; }
   footer p {
     font-size: 0.8rem;
     margin-bottom: 0px;
